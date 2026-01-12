@@ -1,0 +1,21 @@
+public class TestStudentMain {
+    public static void main(String[] args) {
+
+        Student s1 = new Student("65001", "สมชาย ใจดี", "วิทยาการคอมพิวเตอร์", 3.25);
+        Student s2 = new Student("65002", "สมหญิง รักเรียน", "เทคโนโลยีสารสนเทศ", 3.80);
+
+        s1.displayInfo();
+        s2.displayInfo();
+
+        Student[] students = new Student[3];
+
+        students[0] = new Student("65003", "เอกชัย เก่งมาก", "วิศวกรรมซอฟต์แวร์", 3.10);
+        students[1] = new Student("65004", "พรทิพย์ ตั้งใจ", "วิทยาการข้อมูล", 3.60);
+        students[2] = new Student("65005", "อนุชา ขยัน", "ระบบสารสนเทศ", 2.95);
+
+        System.out.println("=== ข้อมูลนักศึกษาทั้งหมด ===");
+        for (int i = 0; i < students.length; i++) {
+            students[i].displayInfo();
+        }
+    }
+}
